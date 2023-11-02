@@ -1,7 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('button').forEach(function(button) {
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('button').forEach((button) => {
         button.onclick = function() {
             document.querySelector("#hello").style.color = button.dataset.shina;
         }
     });
+
+
+    
  });
