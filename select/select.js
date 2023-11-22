@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+const sel = document.querySelector('.selects');
 
-    document.querySelector('select').onchange = () => {
-        document.querySelector('#hello').style.color = this.value;
-    }
-
+  sel.addEventListener('change', function(){
+    document.querySelector('#hello').style.color = sel.value
+  })
     
 });

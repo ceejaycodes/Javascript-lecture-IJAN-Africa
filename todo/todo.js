@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Select the submit button and input to be used later
-    const submit = document.querySelector('#submit');
+    const submit = document.querySelector('#formsub');
     const newTask = document.querySelector('#task');
 
     // Disable submit button by default:

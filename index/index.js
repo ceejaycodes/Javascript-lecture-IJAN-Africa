@@ -1,4 +1,5 @@
 
+document.addEventListener('DOMContentLoaded', function(){
 let b = 0
 function count() {
         b++
@@ -8,7 +9,6 @@ function count() {
         }
     }
 
-    document.addEventListener('DOMContentLoaded', function(){
 
         document.querySelector('button').onclick = count;
 
