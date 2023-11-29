@@ -1,57 +1,29 @@
-const quizData = [
+ const data = [
     {
-        question: 'What is the capital of France?',
-        options: ['Berlin', 'Madrid', 'Paris', 'Rome'],
-        correctAnswer: 'Paris',
+        question: "Who is the President Of The World Economic Forum ",
+        options: ["Barack  Obama","Angela Markel", "Klauss Shwabb", "Justin Trudeau"],
+        correct: "Klauss Shwabb"
     },
     {
-        question: 'Which programming language is used for web development?',
-        options: ['Java', 'Python', 'JavaScript', 'C++'],
-        correctAnswer: 'JavaScript',
+        question: "Which among these have visited the moon",
+        options: ["NIkola Tesla","Buzz Aldrin", "Albert Einstein"],
+        correct: "Buzz Aldrin"
     },
-    // Add more questions as needed
-];
+]
 
-let currentQuestionIndex = 0;
+document.addEventListener('DOMContentLoaded', function(){
+    let questionIndex = 0;
+    const questionDiv = document.querySelector('#questions')
+    const optionsDiv = document.querySelector('#options')
+    const current = data[1]
+    questionDiv.innerHTML = current.index;
 
-function showQuestion() {
-    const questionContainer = document.getElementById('question');
-    const optionsContainer = document.getElementById('options');
-    const currentQuestion = quizData[currentQuestionIndex];
+    optionsDiv.innerHTML = " "
 
-    questionContainer.textContent = currentQuestion.question;
-    optionsContainer.innerHTML = '';
+    current.options.forEach((option)=>{
+        const button  = document.createElement('button')
+        button.textContent = option
+        optionsDiv.appendChild(button)
+    })
 
-    currentQuestion.options.forEach((option) => {
-        const button = document.createElement('button');
-        button.textContent = option;
-        button.addEventListener('click', function () {
-            checkAnswer(option);
-        });
-        optionsContainer.appendChild(button);
-    });
-}
-
-function checkAnswer(selectedOption) {
-    const currentQuestion = quizData[currentQuestionIndex];
-    if (selectedOption === currentQuestion.correctAnswer) {
-        alert('Correct!');
-    } else {
-        alert('Incorrect. The correct answer is ' + currentQuestion.correctAnswer);
-    }
-
-    // Move to the next question
-    nextQuestion();
-}
-
-function nextQuestion() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < quizData.length) {
-        showQuestion();
-    } else {
-        alert('Quiz complete!');
-        // You can add further actions when the quiz is complete
-    }
-}
-
-document.addEventListener('DOMContentLoaded', showQuestion);
+})
