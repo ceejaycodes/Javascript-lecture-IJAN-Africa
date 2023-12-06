@@ -35,21 +35,5 @@ const staffsDetails = [
   ];
 
 document.addEventListener('DOMContentLoaded', function(){
-    let names =  document.querySelector('ul')
-
-    staffsDetails.forEach(function(currentElement) {
-         let li = document.createElement('li')
-        li.innerHTML = `<div class="card" style="width: 18rem;">
-        <img src="${currentElement.image}" class="card-img-top" alt="avatar">
-        <div class="card-body">
-          <h5 class="card-title">Name: ${currentElement.name}</h5>
-          <h6>Age: ${currentElement.age} </h6>
-          <p class="card-text">Salary: $ ${currentElement.salary}</p>
-          <a href="#" class="btn btn-primary"> Call ${currentElement.name}</a>
-        </div>
-      </div>`
-        names.append(li)
-        
-    })
+  
 })
-
