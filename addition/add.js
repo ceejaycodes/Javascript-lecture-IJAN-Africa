@@ -1,4 +1,4 @@
-const scores = [70, 55, 20, 50]
+const scores = [70,88,12,6,65,34,900,400]
 
 document.addEventListener('DOMContentLoaded', ()=> {
     let total = 0;

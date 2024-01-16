@@ -15,15 +15,23 @@ document.addEventListener('DOMContentLoaded', function(){
     let questionIndex = 0;
     const questionDiv = document.querySelector('#questions')
     const optionsDiv = document.querySelector('#options')
-    const current = data[1]
-    questionDiv.innerHTML = current.index;
+    const button = document.querySelector('button')
+    const current = data[questionIndex]
+    questionDiv.innerHTML = current.question;
+
+
+
+
 
     optionsDiv.innerHTML = " "
 
     current.options.forEach((option)=>{
         const button  = document.createElement('button')
-        button.textContent = option
+        button.innerHTML = option
+        button.classList.add('btn', 'btn-warning')
         optionsDiv.appendChild(button)
     })
+
+
 
 })
