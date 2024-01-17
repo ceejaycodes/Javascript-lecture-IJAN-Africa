@@ -124,6 +124,10 @@ nav img{
     padding-top: .6rem;
 }
 
+.imgspan{
+  display: none;
+}
+
 
 
 
@@ -142,6 +146,54 @@ nav img{
     .menulist ul{
         display: flex;
         gap: .5rem
+    }
+
+
+    .modal{
+      width: 50%;
+      height: 30vh;
+      background-color: grey;
+    }
+
+    .imgspan{
+      display: block;
+    }
+
+
+    .imgspan img{
+      height: 0.8rem;
+      width: 0.8rem;
+    }
+  
+
+    .modalparent{
+      display: flex;  
+      justify-content: center; 
+      margin-top: 1rem; 
+    }
+
+    .modal {
+      border-radius: .5rem;
+    }
+
+    .modal img {
+      height: 1.5rem;
+
+    }
+
+    .modalfirst{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .modalfirst h3{
+      padding-left: 12rem;
+    }
+
+    .modalfirst img{
+      margin-top: 1rem;
+      padding-right: 1rem;
+
     }
 
 }
