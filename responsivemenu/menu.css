@@ -108,6 +108,7 @@ nav img{
     display: none;
 }
 
+
 .mobilemenu{
     display: flex;
     justify-content: left;
@@ -124,8 +125,43 @@ nav img{
     padding-top: .6rem;
 }
 
+.signin{
+  display: none;
+}
+
 .imgspan{
   display: none;
+}
+
+
+.main{
+  height: 80vh;
+}
+
+.mobsign{
+  margin: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.mobsign button{
+  height: 3.5rem;
+  border-radius: 2rem;
+  border-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.mobsignin{
+  background-color: #eff0f3;
+  color: black;
+  
+}
+.mobsignup{
+  background-color: #0052ff;
+  color: white;
+  
 }
 
 
@@ -135,6 +171,10 @@ nav img{
 
 
 @media only screen and (min-width: 650px) {
+    #trigger{
+      display: none;
+    }
+
     .mobilemenu{
         display: none;
     }
@@ -145,18 +185,35 @@ nav img{
 
     .menulist ul{
         display: flex;
-        gap: .5rem
+        gap: 1.5rem;
+        font-weight: 700;
+        font-size: .8rem;
+    }
+
+    .signbtn{
+      display: flex;
+      gap: 5rem;
+    }
+
+    .signin{
+      display: block;
+      background-color: #eff0f3;
+      color: black;
     }
 
 
     .modal{
       width: 50%;
-      height: 30vh;
-      background-color: grey;
+      height: 35vh;
+      border-radius: .5rem;
+
+      background-color: white;
     }
 
     .imgspan{
       display: block;
+      margin-right: -6rem;
+      padding-bottom: 0.4rem;
     }
 
 
@@ -172,10 +229,6 @@ nav img{
       margin-top: 1rem; 
     }
 
-    .modal {
-      border-radius: .5rem;
-    }
-
     .modal img {
       height: 1.5rem;
 
@@ -184,16 +237,34 @@ nav img{
     .modalfirst{
       display: flex;
       justify-content: space-between;
+      border-style: solid;
+      border-width: 0rem 0rem 0.05rem 0rem;
+      padding: 1.5rem 1rem;
     }
 
     .modalfirst h3{
       padding-left: 12rem;
+      font-size: 1rem;
     }
 
     .modalfirst img{
       margin-top: 1rem;
       padding-right: 1rem;
 
+    }
+
+    .modalchild{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .arrow p {
+      font-weight: 800;
+      padding-top: 0.4rem;
+    }
+
+    .modalsecond{
+      padding: 0rem 1.5rem;
     }
 
 }

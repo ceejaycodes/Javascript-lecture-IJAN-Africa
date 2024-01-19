@@ -48,11 +48,12 @@
        </span>
 
        <span class="imgspan">
-        <img src="/assets/icons8-world-50.png" alt="modal trigger" />
+        <img class="modaltrigger" src="/assets/icons8-world-50.png" alt="modal trigger" />
        </span>
 
        
-       <span>
+       <span class="signbtn">
+       <button class="signin"> Sign in</button>
        <button> Sign up</button>
     </span>
     <span>
@@ -84,33 +85,40 @@
                 Company
             </li>
          </ul>
+         <span class="mobsign">
+            <button class="mobsignup"> Sign up</button>
+            <button class="mobsignin"> Sign in</button>
+
+         </span>
     </div>
 
+
+    <div class="main">
 
     <div class="modalparent">
     <div class="modal">
         <div class="modalfirst">
             <h3>Global Preferences</h3>
-            <img src="/assets/menuclose.png"/>
+            <img class="closemodal" src="/assets/menuclose.png"/>
         </div>
 
-        <div>
-            <div>
+        <div class="modalsecond">
+            <div class="modalchild">
                 <span>
-                    <h3></h3>
-                    <p></p>
+                    <h3>Country/region</h3>
+                    <p>Global</p>
             </span>
-            <span>
-                <img/>
+            <span class="arrow">
+                <p>></p>
             </span>
             </div>
-            <div>
-                <span>
-                    <h3></h3>
-                    <p></p>
+            <div class="modalchild">
+                <span >
+                    <h3>Language</h3>
+                    <p>English</p>
             </span>
-            <span>
-                <img/>
+            <span class="arrow">
+                <p>></p>
             </span>
             </div>
     
@@ -118,6 +126,8 @@
         </div>
 
     </div>
+</div>
+
 </div>
     
 </body>
