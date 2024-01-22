@@ -71,6 +71,8 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* Main CSS */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -108,6 +110,14 @@ nav img{
     display: none;
 }
 
+#trigger{
+  margin-left: 80px;
+}
+
+#signin{
+  display: none;
+  
+}
 .mobilemenu{
     display: flex;
     justify-content: left;
@@ -125,10 +135,12 @@ nav img{
 }
 
 
+.img-web{
+  background-color: red;
+}
 
 
-
-
+/* for screen sizes, with 650px and above  */
 
 @media only screen and (min-width: 650px) {
     .mobilemenu{
@@ -137,11 +149,28 @@ nav img{
 
     .menulist{
         display: block;
+        margin-right: -820px;
     }
 
     .menulist ul{
         display: flex;
-        gap: .5rem
+        gap: 1.8rem;
+        font-size: 15px;
     }
+    #trigger{
+      display: none;
+    }
+
+    #signin{
+      background-color: #edf0f3;
+      color: black;
+      margin-left: 820px;
+      display: block;
+    }
+
+    #signup{
+      margin-left: -50px;
+    }
+
 
 }
